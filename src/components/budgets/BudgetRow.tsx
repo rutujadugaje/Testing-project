@@ -50,6 +50,7 @@ export function BudgetRow({ progress, onEdit, month }: BudgetRowProps) {
       : state === "warning"
         ? "bg-amber-500"
         : "bg-primary"
+        : "bg-muted"
 
   return (
     <div className="flex flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:gap-4">
@@ -98,7 +99,7 @@ export function BudgetRow({ progress, onEdit, month }: BudgetRowProps) {
         <DropdownMenu>
           <DropdownMenuTrigger
             render={
-              <Button variant="ghost" size="icon-sm" aria-label="Budget Opts">
+              <Button variant="ghost" size="icon-sm" aria-label="Budget options">
                 <MoreHorizontal className="size-4" />
               </Button>
             }
